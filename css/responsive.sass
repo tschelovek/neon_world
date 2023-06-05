@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1280px)
+  .header
+    &__navigation
+      justify-content: flex-end
+      &__list
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        flex-flow: column
+        padding: 60px 20px
+        background-color: $lightGrey
+        margin: 0
+        align-items: flex-start
+        transform: translateY(calc(-100% - 30px))
+        transition: transform 0.4s ease-in-out
+        z-index: 15
+        background-color: $darkGrey
+        &.active
+          transform: translateY(0)
+      &__controls
+        margin-left: 24px
+      &__item_contacts
+        display: unset
+        .contacts__list
+          display: flex
+          flex-flow: column
+          gap: 16px
+
+    &__logo, &__burger, &__controls
+      flex: 1
+
+  .btn_burger
+    display: flex
+
+@media only screen and (max-width: 1024px)
+
+@media only screen and (max-width: 864px)
+
+@media only screen and (max-width: 768px)
+
+@media only screen and (max-width: 640px)
+
+@media only screen and (max-width: 480px)
+
+@media only screen and (max-width: 360px)

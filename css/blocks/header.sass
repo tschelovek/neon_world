@@ -1,0 +1,48 @@
+.header
+  padding: 4px 0
+  //position: fixed
+  //top: 0
+  //left: 0
+  //right: 0
+  background-color: $darkGrey
+  z-index: 120
+  &__controls
+    display: flex
+    justify-content: flex-end
+    &__list
+      display: flex
+      align-items: center
+      gap: 12px
+  &__burger
+    display: flex
+    justify-content: center
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__right-block
+    margin-left: auto
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    flex-flow: wrap
+  &__link
+    padding: 4px 10px
+    -webkit-transition: color 150ms ease
+    transition: color 200ms ease-in-out
+    color: white
+    font-family: Inter, sans-serif
+    font-size: 16px
+    line-height: 1.1
+    font-weight: 500
+    letter-spacing: 0.25px
+    text-decoration: none
+    white-space: nowrap
+    &_lang
+      margin-right: 20px
+    &:hover
+      color: #bbb6a3
+      text-shadow: 0px 0px 20px #FDDA66
+  .nav__list
+    display: flex
+

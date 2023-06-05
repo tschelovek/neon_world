@@ -1,0 +1,283 @@
+.hero
+  padding: 160px 0
+  color: white
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  &__text
+    max-width: 360px
+    font-weight: 500
+    font-size: 18px
+    line-height: 160%
+  &__buttons
+    margin-top: 40px
+    display: flex
+    gap: 20px
+
+.types
+  padding: 60px 0
+  &__list
+    display: flex
+    gap: 20px
+  &__item
+    position: relative
+    overflow: hidden
+    &__text
+      padding: 32px
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      text-align: center
+      color: white
+      transform: translateY(30%)
+      transition: transform 0.3s
+      &_fade
+        opacity: 0
+        transition: opacity 0.5s
+      h3
+        margin-bottom: 6px
+        font-weight: 700
+        font-size: 18px
+        line-height: 1.6
+        text-transform: uppercase
+      p
+        font-weight: 400
+        font-size: 16px
+        line-height: 1.6
+        letter-spacing: -0.05em
+    &:hover
+      .types__item__text
+        transform: translateY(0)
+        &_fade
+          opacity: 1
+    &__button-wrapper
+      margin-top: 20px
+      display: flex
+      justify-content: center
+      .btn_round:hover svg
+        transform: translateX(6px)
+        transition: transform 0.3s ease-in-out
+
+.portfolio
+  padding: 60px 0
+  &__text
+    margin: 0 auto
+    max-width: 780px
+    text-align: center
+    h2
+      margin: 0 auto 20px
+      max-width: 440px
+      letter-spacing: -0.05em
+    p
+      font-weight: 400
+      font-size: 18px
+      line-height: 1.6
+      letter-spacing: -0.05em
+      color: $almostBlack
+    .button-wrapper
+      margin-top: 40px
+  &__images
+    margin-top: 40px
+  .split-half
+    display: flex
+    gap: 20px
+    &__element
+      flex: 1
+      -webkit-border-radius: 10px
+      -moz-border-radius: 10px
+      border-radius: 10px
+      overflow: hidden
+      font-size: 0
+      img
+        height: 100%
+      
+    &_vertical
+      display: flex
+      gap: 20px
+      flex-flow: column
+
+.editor
+  padding: 60px 0
+  &__wrapper
+    display: flex
+  &__image-block
+    flex: 1
+    img
+      max-width: 100%
+  &__text
+    padding-left: 100px
+    flex: 1
+    display: flex
+    flex-flow: column
+    justify-content: space-between
+    gap: 24px
+    h2
+      max-width: 440px
+      letter-spacing: -0.05em
+    p
+      margin: 16px 0
+      font-weight: 400
+      font-size: 18px
+      line-height: 1.6
+      letter-spacing: -0.05em
+      color: $almostBlack
+
+.finished
+  padding: 60px
+  &__header
+    display: flex
+    align-items: baseline
+    justify-content: space-between
+    gap: 40px
+  &__slider
+    margin-top: 40px
+  &__item
+  &__link_more
+    display: inline-flex
+    gap: 12px
+    align-items: center
+    &:hover
+      svg
+        circle
+          fill: $red
+          transition: fill 0.4s
+
+.safety
+  padding: 60px 0
+  &__list
+    margin-top: 40px
+    display: flex
+    justify-content: space-between
+    gap: 32px
+  &__item
+    padding-top: 80px
+    flex: 1
+    text-align: center
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: 48px
+    font-weight: 600
+    font-size: 16px
+    line-height: 1.4
+
+.catalog
+  padding: 60px 0
+  &__list
+    margin-top: 40px
+    display: flex
+    flex-flow: wrap
+    justify-content: center
+    gap: 20px
+  &__item
+    position: relative
+    -webkit-border-radius: 10px
+    -moz-border-radius: 10px
+    border-radius: 10px
+    &__text
+      position: absolute
+      display: flex
+      justify-content: center
+      align-items: center
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      color: white
+      font-weight: 700
+      font-size: 18px
+      line-height: 1.6
+      text-align: center
+      text-transform: uppercase
+      a
+        color: white
+        max-width: 210px
+    img
+      max-width: 100%
+
+.feedback
+  padding: 60px 0
+  &__slider
+    margin-top: 40px
+  &__item
+    text-align: center
+    &__wrapper
+      margin: 0 auto
+      display: flex
+      max-width: 880px
+      justify-content: center
+      flex-flow: column
+      p
+        font-weight: 400
+        font-size: 16px
+        line-height: 1.6
+    &__name
+      margin-top: 40px
+      font-weight: 600
+      font-size: 18px
+
+.articles
+  padding: 60px 0
+  &__list
+    margin-top: 40px
+    display: flex
+    justify-content: center
+    gap: 20px
+    flex-flow: wrap
+  &__item
+    display: flex
+    flex-flow: column
+    max-width: 380px
+    min-width: 260px
+    flex: 1
+    &__image-wrapper
+      overflow: hidden
+      -webkit-border-radius: 10px
+      -moz-border-radius: 10px
+      border-radius: 10px
+      img
+        max-width: 100%
+    &__text
+      margin-top: 20px
+      padding-right: 32px
+      display: flex
+      flex-flow: column
+      flex: 1
+      color: $almostBlack
+      h3
+        font-weight: 700
+        font-size: 32px
+        line-height: 1.2
+      p
+        margin-top: 20px
+        font-weight: 400
+        font-size: 16px
+        line-height: 1.6
+    &__footer
+      margin-top: auto
+      padding: 12px 0 0 30px
+      position: relative
+      font-weight: 400
+      font-size: 14px
+      line-height: 160%
+      color: #828282
+      &::before
+        position: absolute
+        left: 0
+        bottom: 0
+        content: ''
+        display: block
+        width: 24px
+        height: 24px
+        background: url("../images/icons/calendar.svg") no-repeat center
+
+.contacts
+  padding: 60px 0
+  &__wrapper
+    display: flex
+  &__map
+    flex: 1
+  &__text
+    padding-left: 100px
+    flex: 1
