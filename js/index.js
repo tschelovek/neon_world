@@ -8,10 +8,6 @@ const swiper1 = new Swiper('#slider_finished', {
     // pagination: {
     //     el: '.swiper-pagination',
     // },
-    navigation: {
-        nextEl: '.btn_slider_next',
-        prevEl: '.btn_slider_prev',
-    },
     slidesPerView: 4,
     breakpoints: {
         // when window width is >= 320px
@@ -22,7 +18,11 @@ const swiper1 = new Swiper('#slider_finished', {
         // when window width is >= 640px
         640: {
             slidesPerView: 4,
-            spaceBetween: 20
+            spaceBetween: 20,
+            // navigation: {
+            //     nextEl: '.btn_slider_next',
+            //     prevEl: '.btn_slider_prev',
+            // },
         }
     }
 })
@@ -36,10 +36,14 @@ const swiper2 = new Swiper('#slider_feedback', {
     // pagination: {
     //     el: '.swiper-pagination',
     // },
-    navigation: {
-        nextEl: '.btn_slider_next',
-        prevEl: '.btn_slider_prev',
-    },
+    breakpoints: {
+        768: {
+            navigation: {
+                nextEl: '.btn_slider_next',
+                prevEl: '.btn_slider_prev',
+            },
+        }
+    }
     // slidesPerView: 2
     // effect: 'coverflow'
     // autoHeight: true

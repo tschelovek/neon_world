@@ -3,15 +3,15 @@
     &__navigation
       justify-content: flex-end
       &__list
+        padding: 100px 20px 40px
         position: absolute
         top: 0
         left: 0
         right: 0
         flex-flow: column
-        padding: 60px 20px
-        background-color: $lightGrey
+        align-items: center
+        gap: 16px
         margin: 0
-        align-items: flex-start
         transform: translateY(calc(-100% - 30px))
         transition: transform 0.4s ease-in-out
         z-index: 15
@@ -34,13 +34,111 @@
     display: flex
 
 @media only screen and (max-width: 1024px)
+  .hero
+    background-position: center right
+
+  .types
+    &__list
+      flex-flow: wrap
+      justify-content: space-around
+
+  .editor
+    &__text
+      padding-left: 40px
+
+  .contacts__text
+    padding-left: 40px
 
 @media only screen and (max-width: 864px)
+  .safety
+    &__list
+      flex-flow: wrap
+    &__item
+      min-width: 240px
 
 @media only screen and (max-width: 768px)
+  .container
+    padding: 0 32px
+
+  .types
+    &__item__text
+      padding: 24px
+      transform: unset
+      display: flex
+      flex-flow: column
+      justify-content: center
+      &_fade
+        opacity: 1
+    &:hover
+      .types__item__text
+        transform: unset
+        &_fade
+          opacity: unset
+
+  .editor
+    &__image-block
+      display: none
+    &__text
+      padding-left: 0
+      .title_h2
+        margin: 0 auto
+        text-align: center
+      .button-wrapper
+        text-align: center
+
+  .feedback
+    .btn_slider
+      display: none
+
+  .contacts
+    padding: 32px 0 60px
+    &__wrapper
+      flex-flow: column-reverse
+      align-items: center
+    &__text
+      padding-left: 0
+      text-align: center
+
+  .footer
+    &__logo
+      width: 100%
+      flex: unset
+    &__navigation__list
+      max-height: unset
 
 @media only screen and (max-width: 640px)
+  .container
+    padding: 0 24px
+
+  .title
+    &_h1
+      font-size: 40px
+    &_h2
+      font-size: 32px
+
+  .portfolio .split-half, .portfolio .split-half_vertical
+    gap: 16px
 
 @media only screen and (max-width: 480px)
+  .container
+    padding: 0 16px
+
+  .title
+    &_h1
+      font-size: 36px
+
+  .editor, .safety, .feedback
+    padding: 36px 0
+
+  .portfolio .split-half, .portfolio .split-half_vertical
+    gap: 8px
+
+  .finished__header
+    flex-flow: column
 
 @media only screen and (max-width: 360px)
+  .container
+    padding: 0 8px
+
+  .contacts__item
+    white-space: unset

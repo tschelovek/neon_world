@@ -1,5 +1,24 @@
 .footer
+  padding: 20px 0 40px
   background-color: $darkGrey
   &__wrapper
     display: flex
+    justify-content: space-between
+    gap: 20px
+    flex-flow: wrap
+  &__logo
+    flex: 1
+  &__navigation
+    flex: 2
+    &__list
+      display: flex
+      flex-flow: wrap column
+      gap: 20px
+      max-height: 150px
+    //.nav__item
+    //  flex: 1
+  .contacts__list
+    flex: 2
+  .contacts__item, .contacts__item a
+    color: white
 
