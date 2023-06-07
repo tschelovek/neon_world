@@ -80,19 +80,27 @@
       margin-top: 40px
   &__images
     margin-top: 40px
+    &_2
+      img
+        transition: transform 0.3s
+      &:hover img
+        transform: scale(1.1)
+    &_4:hover
+      img
+        -webkit-animation: rotate-hor-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
+        animation: rotate-hor-center 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) both
   .split-half
     display: flex
     gap: 20px
     &__element
       flex: 1
-      -webkit-border-radius: 10px
-      -moz-border-radius: 10px
-      border-radius: 10px
-      overflow: hidden
+      //overflow: hidden
       font-size: 0
       img
         height: 100%
-      
+        -webkit-border-radius: 10px
+        -moz-border-radius: 10px
+        border-radius: 10px
     &_vertical
       display: flex
       gap: 20px

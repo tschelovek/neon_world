@@ -59,4 +59,5 @@ document.getElementById('burgerButton')?.addEventListener('click', e => {
     document.querySelector('.header__navigation__list')?.classList.toggle('active');
 })
 
-
+// Появление элементов при прокрутке страныцы
+AOS.init();
